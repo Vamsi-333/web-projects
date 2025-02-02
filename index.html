@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>   
+    <h2 style="color: white;font-size: 30px; margin-top: 0px;">My Math</h2>  
+    <h3 onclick="sidemenu()" class="menu">M</h3>
+    
+    <ul class="sidemenu" type="none">
+        <button onclick="close()">x</button>
+        <li><a href="">% caliculator</a></li>
+        <li><a href="#e&o">E/O & prime</a></li>
+        <li><a href="#pal">palindrome number</a></li>
+        <li><a href="#per">perfect number</a></li>
+        <li><a href="#cal">caliculator</a></li>
+        <li><a href="#area">areas</a></li>
+        <li><a href="">tables</a></li>
+    </ul>
+</header>
+<main>
+    <div class="mcontainor">
+        <div class="containor1">
+            <!--% caliculation-->
+            <div class="con1">
+                <h1>% caliculation</h1>
+                <input type="text" id="pp" placeholder="%">
+                <input type="text" id="pn1" placeholder="of number">
+                <input type="text" id="per" class="noinput" placeholder="answer" readonly>
+                <div class="button">
+                    <button onclick="percent()" style="width: 70px;margin-left:30px ;">check</button>
+                </div>
+                
+            </div>
+            <!-- even or odd and prime are not-->
+            <div class="con1" id="e&o">
+                <h1>E/O & PRIME</h1>
+                <input type="text" id="en1" placeholder="enter number">
+                <input type="text" id="anse" class="noinput" placeholder="answer" readonly>
+                <div class="button">
+                    <button onclick="even()" style="width: 50px;margin-left:15px ;">E/O</button>
+                    <button onclick="prime()" style="width: 60px;">prime</button>
+                    
+                </div>
+            </div>
+            <!-- palindrome are not-->
+            <div class="con1" id="pal">
+                <h1>palindrome</h1>
+                <input type="text" id="pal" placeholder="enter any thing">
+                <input type="text" id="rev" class="noinput" placeholder="reverse number is" readonly>
+                <input type="text" id="palans" class="noinput" placeholder="answer" readonly>
+                <div class="button">
+                    <button onclick="palindrome()" style="width: 70px;margin-left:30px ;">check</button>
 
+                </div>
+            </div>
+            <!-- perfect -->
+            <div class="con1" id="per">
+                <h1>perfect</h1>
+                <input type="text" id="pn" placeholder="enter number">
+                <input type="text" id="pans" class="noinput" placeholder="answer" readonly>
+                <div class="button">
+                    <button onclick="perfect()" style="width: 70px;margin-left:30px ;">check</button>
+
+                </div>
+            </div>
+            <!-- caliculator-->
+            <div class="con2" id="cal">
+                <h1>caliculator</h1>
+                <input type="text" id=display style="height: 25px;" class="noinput" readonly>
+                <div class="keys">
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('*')">X</button>
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                </div>
+                <button style="margin-left: 20px;width: 150px; margin-top: -5px;" onclick="calculate()">=</button>
+                
+            </div>
+            <!-- area's-->
+            <div class="con3" id="area">
+                <h1>Area's</h1>
+                <div class="try">
+                    <div class="con3-1">
+                        <button id="sa" onclick="sa()" class="con3-1b">square</button>
+                        <button id="ra" onclick="ra()" class="con3-1b">rectangle</button>
+                        <button id="ta" onclick="ta()" class="con3-1b">triangle</button>
+                        <button id="ca" onclick="ca()" class="con3-1b">circle</button>
+                        <button id="ca" onclick="pen()" class="con3-1b">pentagon</button>
+                    </div>
+                    <div class="con3-2">
+                        <h1 id="shape">shape</h1>
+                        <div class="con3-2-1"></div>
+                    </div>
+                    <div class="con3-2">
+                        <div class="shp" ></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="containor3">
+            <div class="con4">
+                <h1>Table</h1>
+                <input type="text" id="Tnum" placeholder="enter number" style="width: 100px; height: 20px;">
+                <button onclick="table()" style="width: 100px;height: 29px;">submit</button>
+                <div id="st"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
