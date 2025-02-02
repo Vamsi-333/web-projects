@@ -1,1 +1,253 @@
+body{
+    margin: 5px;
+    padding: 0px;
+   
+}
+h3{
+    cursor: pointer;
+}
+li{
+    cursor: pointer;
+}
+a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    color:rgb(7, 7, 7);
+    height: 40px ;
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: calibri;
+}
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.03) ;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu{
+    display: none;
 
+}
+@media(max-width:700px){
+    .menu{
+        display: block;
+    }
+}
+    
+h1{
+
+    background-color: skyblue;
+    text-align: center;
+    font-family: calibri;
+    font-size: 30px;
+    color: white;
+    margin-top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.mcontainor{
+    display: flex;
+}
+
+.containor1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5px;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+.con1{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px black;
+    
+}
+.noinput{
+    cursor: not-allowed;
+}
+input{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+::placeholder{
+    text-align: center;
+}
+
+.button{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+button{
+    background-color: skyblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+}
+button:hover{
+    background-color: white;
+    color: skyblue;
+    border:1px solid skyblue ;
+    cursor: pointer;
+}
+.con2{
+    border: 1px solid black;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    height:300px;
+    margin-top: 20px;
+}
+.con3{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    width: 680px;
+    height: 300px;
+    margin-top: 20px;
+
+}
+
+.keys{
+    padding: 20px 20px ;
+    display: grid;
+    grid-template-columns: repeat(4,0.5fr);
+    gap: 3px;
+}
+.try{
+    display: flex;
+    justify-content: space-evenly;
+}
+.con3-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* to give gap around the buttons when used flex*/
+}
+
+.con3-1b{
+    width: 100px;
+    margin-left: 10px;
+    
+}
+.con3-2{
+    height: 230px;
+    width: 230px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+.square{
+background-color: skyblue;
+height: 150px;
+width: 150px;
+margin: 17%;
+}
+.rectangle{
+    height: 100px;
+    width: 150px;
+    background-color: skyblue;
+    margin: 17%;
+}
+.traingle{
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    margin: 17%;
+    border-width: 150px 0px 0px 150px;
+    border-color:transparent transparent transparent skyblue ;
+}
+.circle{
+    background-color: skyblue;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 17%;
+}
+.pentagon{
+    margin: 17%;
+    height: 150px;
+    width: 150px;
+    background-color: skyblue;
+    clip-path: polygon(50% 0,100% 38%,81% 100%,19% 100%,0 38%);
+}
+.con3-2-1{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    overflow: auto;
+    
+}
+
+.con4{
+    height: 520px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px black;
+    
+}
+#st{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 410px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+    overflow: auto; /* it will add vertical scroll bar if
+                        vertical scroll bar is added */
+}
+@media(max-width:700px){
+   
+    .try{
+        display: block;
+    }
+    .con1{
+        margin-top: 20px;
+    }
+    .con3{
+        height: auto;
+        width: 300px;
+    }
+    .con3-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .con3-2{
+        margin: 10px 40px 20px;
+    }
+    .containor3{
+        display:none;
+        
+    }
+}
